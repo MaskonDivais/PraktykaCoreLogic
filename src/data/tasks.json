@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "title": "Project Topic: Set up the React project.",
+    "createdAt": "2025-07-10T10:00:00Z",
+    "answeredAt": "2025-07-11T10:00:00Z",
+    "deadline": "2025-07-15T23:59:59Z",
+    "content": "The project needs a strong foundation before further development. Your first task is to create a well-structured working environment.Initialize a new React application using either Create React App or Vite. Configure the project structure and dependencies. Ensure proper build scripts are set up. Using work on databases. Test the development server to confirm the project runs correctly. \n\n- Use Create React App or Vite to initialize.\n- Organize project folder structure clearly.\n- Install necessary dependencies.\n- Configure build and start scripts.\n- Verify development server runs without errors.\n\nThis setup is the foundation for your entire project. A clean and organized start will make development smoother and more enjoyable.",
+    "answer": "You've made a great start by initializing the project properly. Make sure your folder structure is clean and easy to navigate — this helps greatly as the app scales. Installing essential tools like ESLint, Prettier, and React Router early on can also prevent future issues. Don’t forget to test the dev server after each major change to catch errors quickly.",
+    "answerImages": [
+      "/answers/task_1.JPG",
+      "/answers/task_2.JPG",
+      "/answers/task_3.JPG"
+    ],
+    "files": [
+      {
+        "name": "Documentation",
+        "url": "/documents/pdf_(1).pdf"
+      }
+    ],
+    "type": "Develop"
+  },
+  {
+    "id": 2,
+    "title": "Project Topic: Create components.",
+    "createdAt": "2025-07-09T09:00:00Z",
+    "answeredAt": "2025-07-10T09:00:00Z",
+    "deadline": "2025-07-16T23:59:59Z",
+    "content": "Components are the heart of any React application. This task focuses on building reusable and modular UI blocks.Develop key components such as the task list, individual task items, and rating stars. Oleksandr Focus on reusable and clean component design. Implement proper props and state management. Test the components for correct rendering and interaction.\n\n- Build reusable TaskList and Task components.\n- Pass props correctly between components.\n- Manage state locally or with context.\n- Style components consistently.\n- Test component rendering and user interactions.\n\nWell-structured components are critical for maintainability. Think about future features and flexibility while designing.",
+    "answer": "You're on the right track by focusing on reusable and modular components. Make sure each component handles only one responsibility to keep the logic clean. Use props thoughtfully and consider lifting state up when multiple components need access. Also, styling consistency and proper testing will ensure your components are scalable and easy to maintain.",
+    "answerImages": [
+      "/answers/task_4.JPG"
+    ],
+    "files": [
+      {
+        "name": "Documentation",
+        "url": "/documents/pdf_(2).pdf"
+      },
+      {
+        "name": "Presentation",
+        "url": "/documents/pdf_(3).pdf"
+      }
+    ],
+    "type": "Learn"
+  },
+  {
+    "id": 3,
+    "title": "Project Topic: Add task rating functionality.",
+    "createdAt": "2025-07-08T08:00:00Z",
+    "answeredAt": "2025-07-09T08:00:00Z",
+    "deadline": "2025-07-17T23:59:59Z",
+    "content": "User feedback is essential for evaluating tasks. Let's introduce an intuitive rating system that engages users.Implement a rating system (for example, star-based) that allows users to evaluate tasks. Handle hover and click interactions for selecting ratings. Doroshkevych Update task state to reflect ratings and visually indicate the current score. Ensure ratings are intuitive and responsive.\n\n- Implement star-based rating UI.\n- Allow users to hover and select ratings.\n- Update task state with selected rating.\n- Show visual feedback for ratings.\n- Make rating interactive and accessible.\n\nRatings provide valuable feedback and enhance user engagement. Focus on UX to make rating easy and fun.",
+    "answer": "Adding a star-based rating system is a great way to improve user interaction. Make sure each star is responsive to hover and click events, and provides clear feedback. Use state to store selected ratings and update the UI in real time. For accessibility, don’t forget ARIA attributes and keyboard support.",
+    "answerImages": [
+      "/answers/task_5.JPG",
+      "/answers/task_6.JPG",
+      "/answers/task_7.JPG",
+      "/answers/task_8.JPG"
+    ],
+    "files": [
+      {
+        "name": "Documentation",
+        "url": "/documents/pdf_(4).pdf"
+      }
+    ],
+    "type": "Blog"
+  },
+  {
+    "id": 4,
+    "title": "Project Topic: Manage temporary data storage.",
+    "createdAt": "2025-07-08T08:00:00Z",
+    "answeredAt": "2025-07-09T08:00:00Z",
+    "deadline": "2025-07-18T23:59:59Z",
+    "content": "Before connecting to real databases, local solutions are ideal. Learn how to keep your app responsive using client-side data.Store task data temporarily within the component state or localStorage. Ensure data persists during the session and reloads correctly after page refresh. Avoid using any backend database for now. Handle data updates and deletions smoothly.\n\n- Keep task data in React state.\n- Use localStorage to persist data across reloads.\n- Update data on task edits or deletions.\n- Avoid backend dependencies.\n- Ensure smooth UX for data handling.\n\nTemporary storage keeps the app responsive and simple. This approach is great for learning and quick prototyping.",
+    "answer": "Storing data locally allows your app to remain fast and functional without needing a backend. Use React state for immediate UI updates and localStorage to keep data between page reloads. This method is perfect for prototyping or offline use. Always handle data updates and deletions gracefully to maintain a smooth user experience.",
+    "answerImages": [],
+    "files": [
+      {
+        "name": "Documentation",
+        "url": "/documents/pdf_(5).pdf"
+      }
+    ],
+    "type": "Develop"
+  },
+  {
+    "id": 5,
+    "title": "Project Topic: Display average ratings for each task.",
+    "createdAt": "2025-07-08T08:00:00Z",
+    "answeredAt": "2025-07-09T08:00:00Z",
+    "deadline": "2025-07-19T23:59:59Z",
+    "content": "Displaying summary statistics improves clarity. In this task, you'll calculate and present average user feedback.Calculate and display the average rating for each task based on user input. Update the UI dynamically as ratings change. Provide clear visual feedback to users about task quality. Implement proper formatting for average values and handle unrated tasks gracefully.\n\n- Calculate average rating dynamically.\n- Display average next to each task.\n- Update average on rating changes.\n- Format averages to one decimal place.\n- Handle cases with no ratings gracefully.\n\nShowing averages helps users quickly assess task quality. Keep the display clear and informative.",
+    "answer": "Displaying average ratings helps users make quick judgments about task quality. You should calculate the average in real time and update the UI as ratings change. Format the value neatly (e.g., 4.3) and show a default state for unrated tasks. This creates a smoother and more informative user experience.",
+    "answerImages": [
+      "/answers/task_9.JPG"
+    ],
+    "files": [],
+    "type": "Learn"
+  },
+  {
+    "id": 6,
+    "title": "Project Topic: Save ratings to a persistent database.",
+    "createdAt": "2025-07-08T08:00:00Z",
+    "answeredAt": "2025-07-09T08:00:00Z",
+    "deadline": "2025-07-20T23:59:59Z",
+    "content": "Persistence is key to real-world applications. This task teaches you how to retain ratings across sessions.Design a way to store task ratings persistently. Since no backend is available, simulate a database by using localStorage or IndexedDB. Ensure ratings remain saved across sessions. Plan for future integration with a real backend service if needed.\n\n- Simulate database using localStorage or IndexedDB.\n- Save user ratings persistently.\n- Load saved ratings on app start.\n- Handle saving errors or conflicts.\n- Prepare for future real backend integration.\n\nPersistent storage ensures user data is not lost on refresh. This step brings your app closer to a production-ready state.",
+    "answer": "Persistent storage is essential for maintaining user data between sessions, making your app more reliable. Using localStorage or IndexedDB allows you to simulate a backend and save ratings securely on the client side. Make sure to load saved data when the app starts and handle any potential conflicts or errors gracefully. This prepares your app for a smooth transition to a real backend in the future.",
+    "answerImages": [
+      "/answers/task_3.JPG",
+      "/answers/task_8.JPG"
+    ],
+    "files": [
+      {
+        "name": "Documentation",
+        "url": "/documents/pdf_(6).pdf"
+      },
+      {
+        "name": "Presentation",
+        "url": "/documents/pdf_(7).pdf"
+      }
+    ],
+    "type": "Blog"
+  }
+]

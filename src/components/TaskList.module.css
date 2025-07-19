@@ -1,0 +1,606 @@
+/* --- 1. General Styles & Main Layout --- */
+/* These styles apply to the entire document and main containers. */
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Arial", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.content_conteiner {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  max-width: 1200px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  display: grid;
+}
+
+.spacerTop,
+.spacerBottom {
+  height: 20px;
+}
+
+/* --- 2. Styles for the Main Header (Header with Background) --- */
+/* Styling for the block with a background image and the text on it. */
+
+.titlebg {
+  height: 300px;
+  background-image: url(/src/media/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+  display: grid;
+  position: relative;
+
+  align-items: end;
+  justify-content: center;
+  padding: 2rem;
+  justify-items: stretch;
+
+}
+
+.titlebg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* затемнение — 0.5 = 50% */
+  z-index: 1;
+}
+
+.titlebg * {
+  position: relative;
+  z-index: 2;
+}
+
+.cont_reating {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.cont_title {
+  width: 90vw;
+
+
+}
+
+.listTitle {
+  font-weight: 500;
+  color: #f4fafd;
+  font-size: 2.5rem;
+  margin: 0px;
+}
+
+.Titel_tag_p {
+  color: #f4fafd;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.pt {
+  color: #f4fafd;
+  /* Changed from white to #f4fafd */
+  font-size: 16px;
+  margin: 0px;
+}
+
+/* --- 3. Styles for the User Information Block --- */
+/* The card with the avatar, name, and status. */
+.cont_horizontalList {
+  background-color: #fff;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+
+}
+
+.cont_mainuser {
+  background-color: #fff;
+  /* Changed from #fff to #f4fafd */
+  border-radius: 10px;
+  margin: 1rem 0px 1rem 0px;
+  padding: 2rem;
+  /* Merged styles */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainuser {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.docimg {
+  width: 40px;
+  height: 40px;
+
+  object-fit: contain;
+}
+
+.cont_mainuser_title {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.cont_mainuser_title_p {
+  display: grid;
+  align-content: space-evenly;
+}
+
+.cont_mainuser_title_on {
+  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.pb {
+  font-size: 16px;
+  margin: 0px;
+  color: #333333;
+  /* Assuming this was black text */
+}
+
+.ps {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0px;
+}
+
+/* --- 4. Styles for the Progress Indicator --- */
+
+.progressSection {
+  margin-top: 0.5rem;
+}
+
+.progressBar {
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+
+.progressFill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 9999px;
+}
+
+/* --- 5. Styles for the Task List and its Items --- */
+/* The list container and the styling for a task card. */
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  background-color: #f4fafd;
+  /* Changed from #fff to #f4fafd */
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.divider {
+  height: 1px;
+  margin: 1rem -2rem;
+  width: calc(100% + 4rem);
+  border: none;
+  border-top: 1px solid #d1d5db;
+}
+
+/* --- 6. Inner Components of a Task Item --- */
+/* The header, content, and rating inside the card. */
+
+.taskHeaderTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cont_task_title {
+  display: grid;
+  align-content: space-evenly;
+}
+
+.taskTitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  /* Assuming this was black text */
+}
+
+.taskHeaderBottom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.taskContent {
+  font-size: 1rem;
+  color: #6b7280;
+  /* Changed from #374151 to #6b7280 */
+}
+
+.taskRating {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #333333;
+  /* Assuming this was black text */
+}
+
+.cont_rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unratedText {
+  color: #6b7280;
+  /* Changed from #9ca3af to #6b7280 */
+  font-style: italic;
+}
+
+.taskIconOnline {
+  color: #0078d4;
+}
+
+.taskIcon {
+  color: #ffffff;
+}
+
+.taskIconSmall {
+  color: #ffffff;
+}
+
+/* --- 7. Styles for Interactive Elements (Buttons, Forms, Menus) --- */
+
+/* Three-dot button and the dropdown menu */
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.menuButton:hover {
+  background-color: #e5e7eb;
+  color: #0078d4;
+  /* Added hover effect for text color */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 36px;
+  right: 10px;
+  background: #f4fafd;
+  /* Changed from white to #f4fafd */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 8px 0;
+  width: 140px;
+  z-index: 10;
+}
+
+.dropdownItem {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333333;
+  /* Changed from #111 to #333333 */
+}
+
+.dropdownItem:hover {
+  background-color: #f3f4f6;
+  color: #0078d4;
+  /* Added hover effect for text color */
+}
+
+/* "Add" button and the form for adding a task */
+.addButton {
+  position: relative;
+  margin: 1rem 0 0 0;
+  background-color: #003665;
+  color: #f4fafd;
+  border: none;
+  /* border-radius: 10px; */
+  width: -webkit-fill-available;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+}
+
+.addButton:hover {
+  background-color: #0078d4;
+  /* Changed to #0078d4 for consistency with hover */
+  color: #f4fafd;
+  /* Ensure text color remains consistent on hover */
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  margin: 1rem 0;
+  width: -webkit-fill-available;
+  background: #f4fafd;
+  /* Changed from #fefefe to #f4fafd */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input,
+.textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.addConfirm {
+  background-color: #185390;
+  color: #f4fafd;
+  /* Changed from white to #f4fafd */
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addConfirm:hover {
+  background-color: #0078d4;
+  /* Changed to #0078d4 for consistency with hover */
+  color: #f4fafd;
+  /* Ensure text color remains consistent on hover */
+}
+
+/* --- 8. Styles for the Navigation Menu --- */
+
+.menuContainer {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4fafd;
+  /* Changed from #ffffff to #f4fafd */
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 60px;
+}
+
+.separator {
+  color: #d0d0d0;
+  margin: 0 1.25rem;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.navList {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+
+.navItem:last-child {
+  margin-right: 0;
+}
+
+.navLink {
+  color: #333333;
+  text-decoration: none;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.navLink:hover {
+  color: #0078d4;
+  border-bottom: 2px solid #0078d4;
+  /* Added hover effect for border */
+}
+
+.dataPlatformLink {
+  font-weight: 600;
+  color: #333333;
+  /* Ensure this is also black if not a hover link */
+}
+
+
+.dropdownArrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  vertical-align: middle;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #333333;
+  /* Changed to #333333 */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* --- 9. Miscellaneous Styles --- */
+/* Styles that were in the file but may not be actively used. */
+
+.horizontalList {
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: inline-flex
+}
+
+.horizontalList li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  color: #333333;
+  /* Assuming this was black text */
+}
+
+.horizontalList li:hover {
+  border-bottom-color: #0078d4;
+  /* Changed from #000 to #0078d4 */
+  color: #0078d4;
+  /* Added hover effect for text color */
+}
+
+.psort {
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom-color: #0078d4;
+  color: #0078d4;
+  margin: 0px;
+  padding: 8px 12px;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 2px solid;
+  transition: border-color 0.3s ease;
+
+}
+
+.psb {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+
+/* --- 10. Responsive Styles for Mobile Devices --- */
+@media (max-width: 768px) {
+
+  .content_conteiner{
+            width: -webkit-fill-available;
+            padding: 0.5rem;
+  }
+  .content_conteiner,
+  .wrapper {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cont_title {
+    display: grid;
+    gap: 1rem;
+
+  }
+
+  .titlebg {
+    height: 200px;
+    padding: 1rem;
+
+    justify-items: stretch;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listTitle {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .Titel_tag_p,
+  .pt {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .cont_reating {
+
+    gap: 0.5rem;
+  }
+
+
+
+
+
+
+  .menuContainer {
+    display: none;
+  }
+
+  
+}
+
+/* --- 11. Extra Mobile Support for Very Small Devices (320px–480px) --- */
+@media (max-width: 480px) {
+
+ 
+}
+
