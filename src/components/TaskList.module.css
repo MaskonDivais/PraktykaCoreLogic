@@ -6,9 +6,10 @@
 }
 
 .content_conteiner {
-  width: 100%;
-  margin: auto;
+  width: calc(100% - 2rem);
   padding: 1rem;
+  margin: auto;
+
   display: grid;
   max-width: 1200px;
 }
@@ -346,7 +347,9 @@
 .addButton {
   position: relative;
   margin: 1rem 0 0 0;
-  background-color: #003665;
+  background: linear-gradient(135deg, #80a2ba, #0a5995, #103053);
+  /* background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5); */
+  /* background-color: #003665; */
   color: #f4fafd;
   border: none;
   /* border-radius: 10px; */
@@ -544,10 +547,11 @@
 /* --- 10. Responsive Styles for Mobile Devices --- */
 @media (max-width: 768px) {
 
-  .content_conteiner{
-            width: -webkit-fill-available;
-            padding: 0.5rem;
+  .content_conteiner {
+    width: -webkit-fill-available;
+    padding: 0.5rem;
   }
+
   .content_conteiner,
   .wrapper {
 
@@ -595,12 +599,8 @@
     display: none;
   }
 
-  
+
 }
 
 /* --- 11. Extra Mobile Support for Very Small Devices (320px–480px) --- */
-@media (max-width: 480px) {
-
- 
-}
-
+@media (max-width: 480px) {}

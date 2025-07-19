@@ -156,7 +156,7 @@
 }
 
 .cont_task_rating {
-    background: #dcdedf;
+    background: linear-gradient(135deg, #80a2ba, #0a163b2b, #50799d);
 
   display: inline-flex;
   position: relative;
@@ -524,17 +524,19 @@
   z-index: 2;
 }
 .developHeaderBg {
-  background-image: url('src/media/Develop.jpeg');
+  background-image: url('src/media/Blog.jpeg');
+ 
   /* Путь к изображению для 'Develop' */
 }
 /* Стили для каждого типа задачи */
 .learnHeaderBg {
-  background-image: url('src/media/Learn.jpeg');
+ background-image: url('src/media/Develop.jpeg');
   /* Путь к изображению для 'Learn' */
 }
 
 .blogHeaderBg {
-   background-image: url('src/media/Blog.jpeg');
+   background-image: url('src/media/Learn.jpeg');
+   
   /* Путь к изображению для 'Blog' */
 }
 
