@@ -250,7 +250,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, setTasks }) => {
             <div className={styles.cont_mainuser_title}>
               <img
                 className={styles.userimg}
-                src="src/media/user.jpg"
+                src="/media/user.jpg"
                 alt="User Main Avatar"
               />
               <div className={styles.cont_mainuser_title_p}>

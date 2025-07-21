@@ -230,7 +230,7 @@
 
 .titlebg {
   height: 300px;
-  background-image: url('/src/media/background.jpg');
+  background-image: url('/public/mediabackground.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -484,14 +484,14 @@
   z-index: 2;
 }
 .developHeaderBg {
-  background-image: url('src/media/Blog.jpeg');
+  background-image: url('/public/media/Blog.jpeg');
 }
 .learnHeaderBg {
-  background-image: url('src/media/Develop.jpeg');
+  background-image: url('/public/media/Develop.jpeg');
 }
 
 .blogHeaderBg {
-  background-image: url('src/media/Learn.jpeg');
+  background-image: url('/public/media/Learn.jpeg');
 }
 
 .pbs {

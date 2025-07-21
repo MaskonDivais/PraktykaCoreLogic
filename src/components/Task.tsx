@@ -84,7 +84,7 @@ const Task: React.FC<TaskProps> = ({
          </div>
           <div className={styles.leftWithIcon}>
             <img
-              src="src/media/word.png"
+              src="/media/word.png"
               alt="Task Icon"
               className={styles.docimg}
             />
@@ -166,7 +166,7 @@ const Task: React.FC<TaskProps> = ({
           >
             <div className={styles.leftWithIcon}>
               <img
-                src="src/media/user.jpg"
+                src="/media/user.jpg"
                 alt="User Icon"
                 className={styles.userimg}
               />
