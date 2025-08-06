@@ -84,8 +84,9 @@
 }
 
 .dropdownMenu {
-  position: absolute;
-  top: 36px;
+  position: absolute !important;
+
+  top: 20px;
   right: 10px;
   background-color: #ffffff;
   border: 1px solid #d1d5db;
@@ -484,14 +485,14 @@
   z-index: 2;
 }
 .developHeaderBg {
-  background-image: url('/public/media/Blog.jpeg');
+  background-image: url('/public/media/Blog.jpg');
 }
 .learnHeaderBg {
-  background-image: url('/public/media/Develop.jpeg');
+  background-image: url('/public/media/Develop.jpg');
 }
 
 .blogHeaderBg {
-  background-image: url('/public/media/Learn.jpeg');
+  background-image: url('/public/media/Learn.jpg');
 }
 
 .pbs {
@@ -650,7 +651,8 @@
   }
 
   .dropdownMenu {
-    position: absolute;
+    position: absolute !important;
+
     top: 20px;
     right: 10px;
     padding: 0.5rem;

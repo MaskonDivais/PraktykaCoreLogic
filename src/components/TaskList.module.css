@@ -278,8 +278,9 @@
 }
 
 .dropdownMenu {
-  position: absolute;
-  top: 36px;
+  position: absolute !important;
+
+      top: 1rem;
   right: 10px;
   background: #f4fafd;
   border: 1px solid #ddd;

@@ -241,10 +241,6 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, setTasks }) => {
         </ul>
       </div>
       <div className={styles.content_conteiner}>
-
-
-
-
         <div className={styles.cont_mainuser}>
           <div className={styles.mainuser}>
             <div className={styles.cont_mainuser_title}>
